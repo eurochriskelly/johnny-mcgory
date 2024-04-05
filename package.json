@@ -14,5 +14,8 @@
     "overrides": {
       "@langchain/core": "0.1.5"
     }
+  },
+  "scripts": {
+    "try": "deno run --allow-net --allow-env index.ts"
   }
 }
