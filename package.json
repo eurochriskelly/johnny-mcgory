@@ -6,9 +6,10 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@langchain/google-genai": "^0.0.2",
+    "@langchain/community": "^0.0.44",
+    "@langchain/core": "^0.1.54",
     "@langchain/openai": "^0.0.26",
-    "langchain": "0.0.207"
+    "langchain": "^0.1.31"
   },
   "pnpm": {
     "overrides": {
@@ -16,6 +17,11 @@
     }
   },
   "scripts": {
-    "try": "deno run --allow-net --allow-env index.ts"
+    "build": "tsc",
+    "test": "tsc;node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.4",
+    "typescript": "^5.4.4"
   }
 }
